@@ -42,9 +42,9 @@ void DisplayManager::drawStaticElements() {
 }
 
 void DisplayManager::updateDisplay(float currentTemp, float currentPress, float altitude, 
-                                  float* tempHistory, float* pressHistory, int dataIndex, int maxDataPoints) {
-    tft.fillRect(90, 40, 140, 90, BACKGROUND);
-
+                                    float* tempHistory, float* pressHistory, int dataIndex, int maxDataPoints) {
+    tft.fillRect(80, 40, 150, 100, BACKGROUND);
+    
     tft.setTextSize(2);
     tft.setTextColor(TEMP_COLOR);
     tft.setCursor(80, 50);

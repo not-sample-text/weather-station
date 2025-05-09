@@ -1,2 +1,4 @@
-**/*.zip
 hardware-backups/
+**/*.zip
+**/*.log
+**/*cache
