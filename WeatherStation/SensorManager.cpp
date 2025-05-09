@@ -21,11 +21,13 @@ void SensorManager::readSensors() {
 
     dataIndex = (dataIndex + 1) % MAX_DATA_POINTS;
 
-    // Debug output
-    Serial.print("Temp: "); Serial.print(temperature);
-    Serial.print(" C, Pressure: "); Serial.print(pressure); Serial.println(" hPa");
+    // Debug output with F() macro to save RAM
+    Serial.print(F("Temp: ")); 
+    Serial.print(temperature);
+    Serial.print(F(" C, Pressure: ")); 
+    Serial.print(pressure); 
+    Serial.println(F(" hPa"));
 }
-
 float SensorManager::getCurrentTemperature() {
     int lastIndex = (dataIndex + MAX_DATA_POINTS - 1) % MAX_DATA_POINTS;
     return tempHistory[lastIndex];

@@ -13,7 +13,7 @@ void setup() {
   display.begin();
   
   if (!sensors.begin()) {
-    display.drawError("BMP280 not found!");
+    display.drawError(F("BMP280 not found!"));
     while (1) delay(10);
   }
   
