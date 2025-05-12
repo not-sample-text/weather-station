@@ -50,7 +50,7 @@ Acest proiect necesită următoarele biblioteci:
 
 - Arduino (recomandat Arduino Uno/Nano/Mega)
 - Senzor BMP280 de temperatură și presiune
-- Ecran TFT ILI9341 (240x320 pixeli)
+- Ecran TFT ILI9341 (240x320 pixeli; Pentru acest proiect foloses unul de 2.4", SKU:MSP2401)
 - Adaptor de nivel logic TXS0108E (pentru comunicarea cu senzorul BMP280)
 - Cabluri de conexiune
 - Sursă de alimentare corespunzătoare
